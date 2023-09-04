@@ -21,7 +21,6 @@ u_n = \left\{
 	  1\text{ if }x_n\text{ is even}\\
 	\end{array}
 \right.\\
-
 v_n = \left\{
 	\begin{array}{ll}
 	  1\text{ if }x_n\text{ is odd}\\
@@ -75,6 +74,7 @@ We have a cycle in the Collatz sequence if
 $$
 UX=V
 $$
+
 To solve this, we can transform U in the following way:
 
 | Transformation                        | $l_n$                                                                           |
@@ -94,22 +94,30 @@ To keep equality, we apply the same transformation to $V$
 | $v_n\leftarrow u_{n-1}v_n+2^nv_{n-1}$ | $v_n = v_0\prod_{i=0}^{n-1}u_i+\sum_{i=0}^{n-1}(2^{i+1}v_i\prod_{j=i+1}^{n-1}u_j)$ |
 
 The equality thus gives
+
 $$
 \left(2^{n+1}-\prod_{i=0}^nu_i\right)\underbrace{x_n}_{>0}=\underbrace{v_n\prod_{i=0}^{n-1}u_i}_{>0}+\underbrace{\sum_{i=0}^{n-1}\left(2^{i+1}v_i\prod_{j=i+1}^{n-1}u_j\right)}_{>0}
 $$
+
 For a valid cycle, we thus have
+
 $$
 2^{n+1}>\prod_{i=0}^{n}u_i=3^k
 $$
+
 with $k$, the number of odd numbers in the cycle.
 This gives us an upperbound on the number of odd numbers in a cycle:
+
 $$
 \frac{n+1}{\log_2(3)}>k.
 $$
+
 I want to point out this is in now way new but I didn't see this way to get it, even if equivalent methods have probably been used.
 
 If one could prove that
+
 $$
 \frac{v_n\prod_{i=0}^{n-1}u_i+\sum_{i=0}^{n-1}2^{i+1}v_i\prod_{j=i+1}^{n-1}u_i}{2^{n+1}-3^k}
 $$
+
 is never an positive integer other than 1 and 2, he would have proven that there is no other cycles. It would still not be sufficient to prove the Collatz conjecture as this does not eliminates the possibility that a sequence infinitely increases.
