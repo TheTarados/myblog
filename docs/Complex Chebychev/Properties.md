@@ -26,6 +26,7 @@ $$
 $$
 (2) \left(1-t^2\right)U_{n-1}''-3tU_{n-1}'+\left(n^2-1\right)U_{n-1}=0
 $$
+
 Now the proof:
 
 $$
