@@ -1,7 +1,9 @@
 Let
+
 $$
 P_n=(t+i\sqrt{1-t^2})^n=T_n+U_{n-1}i\sqrt{1-t^2}.
 $$
+
 + $P_{n+2}=2tP_{n+1}-P_n$
 Demonstration
 	
@@ -10,6 +12,7 @@ Demonstration
     $$
  
 + $n^2P_n-tP_n'+(1-t^2)P_n''=0$
+
 Demonstration
 	Some well-known hypothesis: 
 	
@@ -20,8 +23,7 @@ Demonstration
     $$
 	(2) \left(1-t^2\right)U_{n-1}''-3tU_{n-1}'+\left(n^2-1\right)U_{n-1}=0
 	$$
-	
-    Now the proof:
+	Now the proof:
 	
     $$
 	\displaylines{
