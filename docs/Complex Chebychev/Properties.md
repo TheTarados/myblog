@@ -18,6 +18,7 @@ Demonstration
 + $n^2P_n-tP_n'+(1-t^2)P_n''=0$
 
 Demonstration
+
     Some well-known hypothesis: 
 
     $$
