@@ -4,7 +4,7 @@ $$
 p_n(x)=x
 $$
 
-and thus, keeping our conventions from the [general case](general%20case), we want
+and thus, keeping our conventions from the general case, we want
 
 $$
 \frac{a_nx+bk_n}{k_nx+c_n}=x
